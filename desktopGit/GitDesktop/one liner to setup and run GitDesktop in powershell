@@ -1,0 +1,2 @@
+ $n='GitHubDesktop';$t="$env:TEMP\$n";$exe="$t\GitHubDesktopSetup.exe";New-Item -ItemType Directory -Path $t -Force|Out-Null;Write-Host "Downloading $n..." -ForegroundColor Cyan;Invoke-WebRequest -Uri 'https://central.github.com/deployments/desktop/desktop/latest/win32' -OutFile $exe;Write-Host "Installing $n..." -ForegroundColor Green;Start-Process $exe -Wait;Write-Host "DONE: $n installed" -ForegroundColor Green
+
