@@ -1,0 +1,39 @@
+<Window x:Class="GitDesk.MergeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Merge Branch" Width="450" Height="280"
+        WindowStartupLocation="CenterOwner"
+        Background="{StaticResource BgDarkBrush}"
+        ResizeMode="NoResize">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Merge Branch" FontSize="18" FontWeight="Bold"
+                   Foreground="{StaticResource TextPrimaryBrush}" Margin="0,0,0,8"/>
+        <TextBlock Grid.Row="1" x:Name="CurrentBranchText" FontSize="13"
+                   Foreground="{StaticResource TextSecondaryBrush}" Margin="0,0,0,16"/>
+
+        <TextBlock Grid.Row="2" Text="Merge from:" FontSize="12"
+                   Foreground="{StaticResource TextSecondaryBrush}" Margin="0,0,0,6"/>
+        <ComboBox Grid.Row="3" x:Name="BranchCombo" FontSize="13"
+                  Background="{StaticResource BgLightBrush}"
+                  Foreground="{StaticResource TextPrimaryBrush}"
+                  BorderBrush="{StaticResource BorderBrush}" Margin="0,0,0,8"/>
+
+        <CheckBox Grid.Row="4" x:Name="SquashCheck" Content="Squash commits"
+                  Foreground="{StaticResource TextSecondaryBrush}" FontSize="12"
+                  Margin="0,8,0,0" VerticalAlignment="Top"/>
+
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="Cancel" Style="{StaticResource ModernButton}" Click="Cancel_Click" Margin="0,0,8,0"/>
+            <Button Content="Merge" Style="{StaticResource AccentButton}" Click="Merge_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

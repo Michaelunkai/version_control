@@ -1,0 +1,3 @@
+F:\study\Version_control\git\GitDesk\GitDesk\bin\Release\net9.0-windows\win-x64\publish\GitDesk.pdb
+F:\study\Version_control\git\GitDesk\GitDesk\bin\Release\net9.0-windows\win-x64\publish\git2-a418d9d.dll
+F:\study\Version_control\git\GitDesk\GitDesk\bin\Release\net9.0-windows\win-x64\publish\GitDesk.exe

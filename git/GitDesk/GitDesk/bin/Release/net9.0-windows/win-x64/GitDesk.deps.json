@@ -1,0 +1,68 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {},
+    ".NETCoreApp,Version=v9.0/win-x64": {
+      "GitDesk/1.0.0": {
+        "dependencies": {
+          "LibGit2Sharp": "0.30.0",
+          "Microsoft.NET.ILLink.Tasks": "9.0.13"
+        },
+        "runtime": {
+          "GitDesk.dll": {}
+        }
+      },
+      "LibGit2Sharp/0.30.0": {
+        "dependencies": {
+          "LibGit2Sharp.NativeBinaries": "2.0.322"
+        },
+        "runtime": {
+          "lib/net6.0/LibGit2Sharp.dll": {
+            "assemblyVersion": "0.30.0.0",
+            "fileVersion": "0.30.0.0"
+          }
+        }
+      },
+      "LibGit2Sharp.NativeBinaries/2.0.322": {
+        "native": {
+          "runtimes/win-x64/native/git2-a418d9d.dll": {
+            "fileVersion": "1.7.2.0"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/9.0.13": {}
+    }
+  },
+  "libraries": {
+    "GitDesk/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibGit2Sharp/0.30.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1cBg/7nz6q+yzvComhqQaTS4nbXloLp/x29ZgY/Rr82ohpkuaWT8ZYzsPLFvs1zmCh/4xQbVt5sQxazGblgRig==",
+      "path": "libgit2sharp/0.30.0",
+      "hashPath": "libgit2sharp.0.30.0.nupkg.sha512"
+    },
+    "LibGit2Sharp.NativeBinaries/2.0.322": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EWQaEevzc8uS1ZGS6T83jqUPBY//2WUSCHwbZHBoHOjlfSehqr30nm/VAhJPzjam/69sv7nlLKVcho9t2XuR/Q==",
+      "path": "libgit2sharp.nativebinaries/2.0.322",
+      "hashPath": "libgit2sharp.nativebinaries.2.0.322.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f7t15I9ZXV7fNk3FIzPAlkJNG1A1tkSeDpRh+TFWEToGGqA+uj6uqU15I8YOkkYICNY2tqOVm2CMe6ScPFPwEg==",
+      "path": "microsoft.net.illink.tasks/9.0.13",
+      "hashPath": "microsoft.net.illink.tasks.9.0.13.nupkg.sha512"
+    }
+  }
+}
